@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>详情页</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/good_details.css" />
+    <link rel="stylesheet" type="text/css" href="../css/lxzoom.css" />
+</head>
+<body>
+    <div class="page">
+        <div id="header">
+            <div class="head_top">
+                <div class="w1190">
+                    <ul class="top_menu">
+                        <li>
+                            <div class="login_reg" ><a href="login.html" id="login">欢迎登录名鞋库</a><a href="registered.html" id="reg">免费注册</a></div>
+                            <div class="logined" style="display:none">欢迎您，<span id="uname"></span>！<a href="javascript:void(0)" id="logout">[退出]</a></div>
+                        </li>
+                        <li>
+                            <p><a href="#">我的名鞋库</a></p><i class="triangle_icon"></i>
+                            <div class="hd"></div>
+                            <ul class="top_my_drop">
+                                <li><a href="#">我的订单</a></li>
+                                <li><a href="#">我的积分</a></li>
+                                <li><a href="#">优惠券</a></li>
+                                <li><a href="#">商品收藏</a></li>
+                                <li><a href="#">收货地址</a></li>
+                                <li><a href="#">密码管理</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><a href="#">手机名鞋库</a></p><i class="triangle_icon"></i>
+                            <div class="hd"></div>
+                            <div class="top_phone_drop">
+                                <img src="../img/header_wx1.png" height="120" width="100" alt="" />
+                                <img src="../img/header_wx2.png" alt="" />
+                            </div>
+                        </li>
+                        <li><a href="#">收藏名鞋库</a></li>
+                        <li><a href="#">名鞋库客服<i></i></a></li>
+                        <li><i></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="head_middle">
+                <div class="w1190 g_clear">
+                    <div class="logo g_fl"><a href="../index.html"><img src="../img/transparent.gif" width="421" height="63" alt="欢迎来到名鞋库网上鞋城!"></a></div>
+                    <div class="head_cart g_fr">
+                        <a href="javascript:void(0)">购物车<strong class="cart_num"></strong>件</a>
+                        <div class="cart_detail">
+                            <ul class="hd_cart_list">
+                               <!--  <li>
+                                    <img src="../img/cart_good_1.jpg" height="150" width="150" alt="" />
+                                    <p>锐步Reebok新款男鞋休闲鞋运动鞋运动休闲V69420 DMQC(尺码:42（建议42.5码脚穿着),颜色:红色+白)</p>
+                                    <span class="good_num">2</span>
+                                    <div class="good_r"><span class="price">179</span><span class="delBtn">[删除]</span></div>
+                                </li>
+                                <li>
+                                    <img src="../img/cart_good_1.jpg"/>
+                                    <p>锐步Reebok新款男鞋休闲鞋运动鞋运动休闲V69420 DMQC(尺码:42（建议42.5码脚穿着),颜色:红色+白)</p>
+                                    <span class="good_num">2</span>
+                                    <div class="good_r"><span class="price good_price">179</span><span class="delBtn">[删除]</span></div>
+                                </li> -->
+                            </ul>
+                            <div class="hd_cart_checkout">
+                                商品总价：<span class="total_price price"></span><br /><a href="good_cart.html"><img src="../img/hd_check_out.png" height="21" width="76" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="head_search g_fl">
+                        <form action="#" id="form1">
+                            <input type="text"  id="hd_searchText" />
+                            <input type="submit" value="搜索" id="hd_searchBtn" />
+                        </form>
+                        <div class="keyword">热搜：<a href="#">跑步鞋</a><a href="#">跑步鞋</a><a href="#">跑鞋</a><a href="#">跑萨达鞋</a><a href="#">跑asd鞋</a><a href="#">跑步鞋</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="head_nav">
+                <div class="w1190 g_clear">
+                    <div class="hd_nav_l g_fl">所有商品分类
+                        <ul class="nav_bar">
+                            <li>
+                                <i class="bg">&nbsp;</i>
+                                <a href="goods_list.html?type=type1">运动休闲鞋</a>
+                                <i class="arror"></i>
+                            </li>
+                            <li>
+                                <i class="bg">&nbsp;</i>
+                                <a href="goods_list.html?type=type1">运动休闲服</a>
+                                <i class="arror"></i>
+                            </li>
+                            <li>
+                                <i class="bg">&nbsp;</i>
+                                <a href="goods_list.html?type=type1">跑步</a>
+                                <i class="arror"></i>
+                            </li>
+                            <li>
+                                <i class="bg">&nbsp;</i>
+                                <a href="goods_list.html?type=type1">篮球</a>
+                                <i class="arror"></i>
+                                <ul class="nav_two">
+                                    <li>
+                                        <h3><i></i>篮球<a href="goods_list.html?type=type1" class="more">更多</a></h3>
+                                        <p>
+                                            <a href="goods_list.html?type=type1">2017新品</a>
+                                            <a href="goods_list.html?type=type1" class="g_hot">篮球鞋</a>
+                                            <a href="goods_list.html?type=type1">2017新品</a>
+                                            <a href="goods_list.html?type=type1">篮球鞋</a>
+                                            <a href="goods_list.html?type=type1">NBA</a>
+                                            <a href="goods_list.html?type=type1">篮球鞋</a>
+                                            <a href="goods_list.html?type=type1">2017新品</a>
+                                            <a href="goods_list.html?type=type1">篮鞋</a>
+                                            <a href="goods_list.html?type=type1">2017新品</a>
+                                            <a href="goods_list.html?type=type1">篮球鞋</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h3>明星系列</h3>
+                                        <p>
+                                            <a href="goods_list.html?type=type1">2017新品</a>
+                                            <a href="goods_list.html?type=type1">乔丹</a>
+                                            <a href="goods_list.html?type=type1">篮球鞋</a>
+                                            <a href="goods_list.html?type=type1" class="g_hot">科比</a>
+                                            <a href="goods_list.html?type=type1">篮球鞋</a>
+                                            <a href="goods_list.html?type=type1">NBA</a>
+                                            <a href="goods_list.html?type=type1">篮球鞋</a>
+                                            <a href="goods_list.html?type=type1" class="g_hot">库里</a>
+                                            <a href="goods_list.html?type=type1">篮鞋</a>
+                                            <a href="goods_list.html?type=type1">2017新品</a>
+                                            <a href="goods_list.html?type=type1">篮球鞋</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h3>热搜品牌</h3>
+                                        <p>
+                                            <a href="goods_list.html?type=type1">阿迪达斯</a>
+                                            <a href="goods_list.html?type=type1" class="g_hot">耐克</a>
+                                            <a href="goods_list.html?type=type1">李宁</a>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <i class="bg">&nbsp;</i>
+                                <a href="goods_list.html?type=type1">足球</a>
+                                <i class="arror"></i>
+                            </li>
+                            <li>
+                                <i class="bg">&nbsp;</i>
+                                <a href="goods_list.html?type=type1">包包/配件</a>
+                                <i class="arror"></i>
+                            </li>
+                            <li>
+                                <i class="bg">&nbsp;</i>
+                                <a href="goods_list.html?type=type1">户外</a>
+                                <i class="arror"></i>
+                            </li>
+                            <li>
+                                <i class="bg">&nbsp;</i>
+                                <a href="goods_list.html?type=type1">男鞋</a>
+                                <i class="arror"></i>
+                            </li>
+                            <li>
+                                <i class="bg">&nbsp;</i>
+                                <a href="goods_list.html?type=type1">童鞋</a>
+                                <i class="arror"></i>
+                            </li>
+                             <li>
+                                <i class="bg">&nbsp;</i>
+                                <a href="goods_list.html?type=type1">2017新品专区</a>
+                                <i class="arror"></i>
+                            </li>
+                             <li>
+                                <i class="bg">&nbsp;</i>
+                                <a href="goods_list.html?type=type1">断码清仓专区</a>
+                                <i class="arror"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="hd_nav_c g_fl">
+                        <li><a href="../index.html">首页</a></li>
+                        <li><a href="goods_list.html?type=type1">男子运动</a>
+                            <div class="nav_box">
+                                <ul>
+                                    <li>
+                                        <h4>运动鞋</h4>
+                                        <p>
+                                            <a href="goods_list.html?type=type1">休闲鞋</a>
+                                            <a href="goods_list.html?type=type1">休鞋</a>
+                                            <a href="goods_list.html?type=type1">休闲鞋</a>
+                                            <a href="goods_list.html?type=type1">休鞋</a>
+                                            <a href="goods_list.html?type=type1">休闲鞋</a>
+                                            <a href="goods_list.html?type=type1">闲鞋</a>
+                                            <a href="goods_list.html?type=type1">休闲鞋</a>
+                                            <a href="goods_list.html?type=type1">休闲鞋</a>
+                                            <a href="goods_list.html?type=type1">闲鞋</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>服装</h4>
+                                        <p>
+                                            <a href="goods_list.html?type=type1">短袖T學</a>
+                                            <a href="goods_list.html?type=type1">短袖Polp</a>
+                                            <a href="goods_list.html?type=type1">短T學</a>
+                                            <a href="goods_list.html?type=type1">短袖T學</a>
+                                            <a href="goods_list.html?type=type1">短袖</a>
+                                            <a href="goods_list.html?type=type1">短學</a>
+                                            <a href="goods_list.html?type=type1">短袖T學</a>
+                                        </p>
+                                    </li>
+                                    <li class="nb_brand">
+                                        <h4>品牌推荐</h4>
+                                        <p><a href=""><img src="../img/nb.jpg"/></a></p>
+                                        <p><a href=""><img src="../img/nb.jpg"/></a></p>
+                                        <p><a href=""><img src="../img/nb.jpg"/></a></p>
+                                        <p><a href=""><img src="../img/nb.jpg"/></a></p>
+                                        <p><a href=""><img src="../img/nb.jpg"/></a></p>
+                                        <p><a href=""><img src="../img/nb.jpg"/></a></p>
+                                        <p><a href=""><img src="../img/nb.jpg"/></a></p>
+                                        <p><a href=""><img src="../img/nb.jpg"/></a></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="goods_list.html?type=type1">女子运动</a>
+                        </li>
+                        <li><a href="goods_list.html?type=type1">儿童</a>
+                        </li>
+                        <li><a href="goods_list.html?type=type1">男鞋</a></li>
+                        <li><a href="goods_list.html?type=type1">户外</a></li>
+                    </ul>
+                    <div class="hd_nav_wx g_fl"><span></span><img src="../img/header_wx3.png" height="165" width="165" alt="" /></div>
+                    <ul class="hd_nav_r g_fr">
+                        <li><a href="goods_list.html?type=type1">上新区</a></li>
+                        <li><a href="goods_list.html?type=type1">即将售罄</a></li>
+                        <li><a href="goods_list.html?type=type1" class="g_cur">逢八必杀</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+        <div class="w990">
+            <div class="link_position">
+                您当前的位置： <a href="#">名鞋库</a> » <a href="#">运动鞋子</a> » <a href="#">帆布鞋</a> » <a href="#">匡威</a> » <a href="#">匡威鞋子</a> » <a href="#">匡威 150143C</a>
+            </div>
+            <div class="details_box g_clear">
+                <div class="db_left g_fl">
+                    <ul class="db_left_items">
+                       <!--  <li>
+                            <div class="imgConts">
+                                <a href="#"><img src="../img/gd_big1.jpg" alt="" /></a>
+                                <a href="#"><img src="../img/gd_big2.jpg" alt="" /></a>
+                                <a href="#"><img src="../img/gd_big3.jpg" alt="" /></a>
+                                <a href="#"><img src="../img/gd_big4.jpg" alt="" /></a>
+                                <a href="#"><img src="../img/gd_big5.jpg" alt="" /></a>
+                                <a href="#"><img src="../img/gd_big6.jpg" alt="" /></a>
+                                <a href="#"><img src="../img/gd_big7.jpg" alt="" /></a>
+                            </div>  
+                            <ul class="img_tabs g_clear">
+                                <li class="g_on"><img src="../img/gd_small1.jpg" alt="" /><span></span></li>
+                                <li><img src="../img/gd_small2.jpg" alt="" /><span></span></li>
+                                <li><img src="../img/gd_small3.jpg" alt="" /><span></span></li>
+                                <li><img src="../img/gd_small4.jpg" alt="" /><span></span></li>
+                                <li><img src="../img/gd_small5.jpg" alt="" /><span></span></li>
+                                <li><img src="../img/gd_small6.jpg" alt="" /><span></span></li>
+                                <li><img src="../img/gd_small7.jpg" alt="" /><span></span></li>
+                            </ul>
+                        </li>
+                        <li style="display:none;">
+                            <div class="imgConts">
+                                <a href="javascript:void(0)"><img src="../img/gd_white_big1.jpg" alt="" /></a>
+                                <a href="javascript:void(0)"><img src="../img/gd_white_big2.jpg" alt="" /></a>
+                                <a href="javascript:void(0)"><img src="../img/gd_white_big3.jpg" alt="" /></a>
+                                <a href="javascript:void(0)"><img src="../img/gd_white_big4.jpg" alt="" /></a>
+                                <a href="javascript:void(0)"><img src="../img/gd_white_big5.jpg" alt="" /></a>
+                                <a href="javascript:void(0)"><img src="../img/gd_white_big6.jpg" alt="" /></a>
+                                <a href="javascript:void(0)"><img src="../img/gd_white_big7.jpg" alt="" /></a>
+                            </div>  
+                            <ul class="img_tabs g_clear">
+                                <li class="g_on"><img src="../img/gd_white_small1.jpg" alt="" /><span></span></li>
+                                <li><img src="../img/gd_white_small2.jpg" alt="" /><span></span></li>
+                                <li><img src="../img/gd_white_small3.jpg" alt="" /><span></span></li>
+                                <li><img src="../img/gd_white_small4.jpg" alt="" /><span></span></li>
+                                <li><img src="../img/gd_white_small5.jpg" alt="" /><span></span></li>
+                                <li><img src="../img/gd_white_small6.jpg" alt="" /><span></span></li>
+                                <li><img src="../img/gd_white_small7.jpg" alt="" /><span></span></li>
+                            </ul>
+                        </li> -->
+                    </ul> 
+                    <div class="gd_shares g_clear"><span>分享到：</span>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="db_right g_fr">
+                    <h3 class="g_clear"><span class="db_right_good_text"></span>
+                        <div class="r_more g_fr">更多<a href="goods_list.html?type=type3">匡威</a></div>
+                    </h3>
+                    <ul class="mes">
+                       <!--  <li><strong>吊牌价：</strong><del>469</del></li>
+                        <li><strong>销售价：</strong><span class="price">329</span><span class="discount">7</span><span class="save">140</span></li>
+                        <li><strong>好评度：</strong><i></i><span class="score">5</span>(<a href="#" class="appra_num">5</a>)</li>
+                        <li><strong><b>运</b>费：</strong><span>名鞋库会员满399包邮  ( 不包括货到付款 )</span></li> -->
+                    </ul>
+                    <div class="promotion g_clear">
+                        <div class="g_fl">促销信息</div>
+                        <div class="g_fr"><span>满299减10</span><span>599减20</span><span>999减50</span><span class="limit_num">限购3件</span></div>
+                    </div>
+                    <div class="buy_box">
+                        <!-- <ul class="buy_choice">
+                            <li class="g_clear size_choice"><strong>尺码：</strong>
+                                <span>35(建议34码脚穿着)<i></i></span>
+                                <span>36(建议35码脚穿着)<i></i></span>
+                                <span>36.5(建议36码脚穿着)<i></i></span>
+                                <span>37(建议36.5码脚穿着)<i></i></span>
+                                <span>39.5(建议39码脚穿着)<i></i></span>
+                                <span>40(建议39.5码脚穿着)<i></i></span>
+                                <span>41.5(建议41码脚穿着)<i></i></span>
+                                <span>42(建议41.5码脚穿着)<i></i></span>
+                            </li>
+                            <li class="g_clear color_choice"><strong>颜色：</strong>
+                                <div class="gd_item_colors g_clear">
+                                    <span class="g_on"><img src="../img/gd_img_black.jpg" alt="" /><i></i></span>
+                                    <span><img src="../img/gd_img_white.jpg" alt="" /><i></i></span>
+                                </div>  
+                            </li>
+                            <li class="g_clear num_choice"><strong>购买数量：</strong>
+                                <span class="decrease"></span>
+                                <input type="text" value="1" class="gd_num">
+                                <span class="increase"></span>
+                            </li>
+                            <div class="gd_house"></div>
+                            <img src="../img/cimaIcon.gif" alt="" class="gd_conversion"/>
+                        </ul>
+                        <div class="buy_btns g_clear">
+                            <p class="g_fl">您将购买<span class="num"></span>件<span class="size"></span><span class="text" style="display:none">码</span><span class="color"></span></p>
+                            <div class="g_fr"><span class="buy_now"></span><span class="add_cart"></span></div>
+                        </div> -->            
+                    </div>
+                    <div class="gd_server">名鞋库客服：
+                        <span>销售：</span><img src="../img/gd_qq.gif" alt="" />
+                        <span>销售：</span><img src="../img/gd_qq.gif" alt="" />
+                    </div>
+                    <div class="gd_protect">名鞋库保障：
+                       <img src="../img/gd_protect1.png" alt="" /><span>正品认证</span>
+                       <img src="../img/gd_protect2.png" alt="" /><span>自由退货</span>
+                       <img src="../img/gd_protect3.png" alt="" /><span>全场满399免邮</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tab_box">
+                <ul class="tb_tabs g_clear">
+                    <li class="g_on"><span>商品详情</span></li>
+                    <li><span>常见问题</span></li>
+                </ul>
+                <ul class="tb_conts">
+                    <li>
+                        <a href="#"><img src="../img/gd_detail1.jpg" alt="" /></a>
+                        <ul class="gd_mes g_clear">
+                            <li>商品重量：<span>800.000 克(g)</span></li>
+                            <li>货号：<span>匡威 150143C</span></li>
+                            <li>品牌：<span>CONVERSE</span></li>
+                            <li>配色：<span>黑色</span></li>
+                            <li>款式：<span>帆布鞋</span></li>
+                            <li>帮面材质：<span>纺织织物</span></li>
+                            <li>性别：<span>中性</span></li>
+                            <li>大底材质：<span>橡胶</span></li>
+                            <li>价格区间：<span>300-399元</span></li>
+                            <li>试穿建议：<span>正常码购买</span></li>
+                            <li>包装情况：<span>无挂牌</span></li>
+                            <li>产地：<span>越南</span></li>
+                            <li>鞋名：<span>无</span></li>
+                            <li>适合：<span>硬地</span></li>
+                        </ul>
+                        <img src="../img/gd_detail0.jpg" alt="" />
+                        <img src="../img/gd_detail2.jpg" alt="" />
+                        <img src="../img/gd_detail3.jpg" alt="" />
+                        <img src="../img/gd_detail4.jpg" alt="" />
+                        <img src="../img/gd_detail5.jpg" alt="" />
+                        <img src="../img/gd_detail6.jpg" alt="" />
+                        <img src="../img/gd_detail7.jpg" alt="" />
+                        <img src="../img/gd_detail8.jpg" alt="" />
+                        <a href="#"><img src="../img/gd_detail9.jpg" alt="" /></a>
+                        <ul class="gd_ques">
+                            <li class="g_clear">
+                                <img src="../img/gd_detail_icon1.jpg" alt="" />
+                                <p class="g_fr">
+                                    因拍照、灯光、各显示器显示效果不同等原因，您在电脑商看到的商品图片可能会与您收到的商品图片存在颜色差异，实际颜色以您收到的商品为准。请对颜色较为苛刻的顾客朋友谨慎购买，色彩问题不在名鞋库退换货范围内。
+                                </p>
+                            </li>
+                            <li class="g_clear">
+                                <img src="../img/gd_detail_icon2.jpg" alt="" class="g_fl"/>
+                                <p class="g_fr">
+                                    因品牌尺码体系，鞋型及测量方法的不同，商品实际尺码与我们提供的数据可能存在细微的差别，属正常现象，如您无法确定，请与客服核实，客服只对客户朋友提供的大致体型给出购买建议，请顾客朋友保留最终决定权，尺码不合可在七天内免责退换，邮费由顾客朋友承担。
+                                </p>
+                            </li>
+                            <li class="g_clear">
+                                <img src="../img/gd_detail_icon3.jpg" alt="" class="g_fl"/>
+                                <p class="g_fr">
+                                    鉴于提发包量巨大和款式多样，为确保每位卖家收到自己心仪的商品，发包程序需经过多方配合和检验，时间为1-2个工作日。请对发货速度要求较高的顾客朋友联系专属客服咨询物流及配送状态。
+                                </p>
+                            </li>
+                            <li class="g_clear">
+                                <img src="../img/gd_detail_icon4.jpg" alt="" class="g_fl"/>
+                                <p class="g_fr">
+                                    请选用名鞋库专用快递，即根据可达到区域，自动选择申通或EMS；如有特殊物流要求，请与客服联系并在订单留言中说明；名鞋库支持全国货到付款，即顺丰快递可达区域均可享受货到付款政策，需要提醒的是：货到付款运费由顾客朋友自行承担！
+                                </p>
+                            </li>
+                        </ul>
+                        <img src="../img/gd_detail10.jpg" alt="" class="g_fl"/>
+                    </li>
+                    <li style="display:none;">
+                        <img src="../img/gd_ques.jpg" alt="" />
+                        <p class="bot">如果以上的常见问题仍然无法解决您对Converse匡威男女鞋帆布鞋2017新款经典高帮休闲运动鞋150143的疑问，您可以通过询问名鞋库客服人员，或登录s.cn名鞋库网站，直接提问，来解决关于Converse匡威男女鞋帆布鞋2017新款经典高帮休闲运动鞋150143的问题。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="related_sugs">
+                <h4>相关推荐</h4>
+                <p><a href="#">匡威帆布鞋</a><a href="#">匡威休闲鞋</a><a href="#">匡威板鞋</a><a href="#">匡威情侣鞋</a><a href="#">匡威女鞋</a><a href="#">匡威男鞋</a></p>
+            </div>
+            <div class="rom_brand_nav g_clear">
+                <a href="#"><span></span></a>
+                <a href="#"><span></span></a>
+                <a href="#"><span></span></a>
+                <a href="#"><span></span></a>
+                <a href="#"><span></span></a>
+                <a href="#"><span></span></a>
+                <a href="#"><span></span></a>
+                <a href="#"><span></span></a>
+                <a href="#"><span></span></a>
+                <a href="#"><span></span></a>
+                <a href="#"><span></span></a>
+                <a href="#"><span></span></a>
+                <a href="#"><span></span></a>
+                <a href="#"><span></span></a>
+                <a href="#"><span></span></a>
+                <a href="#"><span></span></a>
+                <a href="#"><span></span></a>
+                <a href="#"><span></span></a>
+                <a href="#"><span></span></a>
+                <a href="#"><span></span></a>
+            </div>
+            <script type="text/javascript">
+                 Array.prototype.forEach.call(document.getElementsByClassName('rom_brand_nav')[0].getElementsByTagName('a'),function(item){
+                    item.style.backgroundPositionX = parseFloat(getComputedStyle(item).backgroundPositionX)-10 + 'px';
+                 });
+            </script>
+            <div class="rom_goods_sort">
+                <div class="rgs_title">
+                    <h3>商品分类</h3>
+                </div>
+                <ul class="rgs_cont g_clear">
+                     <li>
+                        <h4><a href="#">运动休闲-鞋</a></h4>
+                        <img src="../img/scnbtncat1.jpg"/>
+                        <ul>
+                            <li>
+                                <a href="#">休闲鞋</a>
+                                <a href="#">休鞋</a>
+                                <a href="#">休闲鞋</a>
+                            </li>
+                            <li>
+                                <a href="#">休闲鞋574</a>
+                                <a href="#">休闲ZX</a>
+                                <a href="#">休闲鞋</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4><a href="#">运动休闲-鞋</a></h4>
+                        <img src="../img/scnbtncat1.jpg"/>
+                        <ul>
+                            <li>
+                                <a href="#">休闲鞋</a>
+                                <a href="#">休鞋</a>
+                                <a href="#">休闲鞋</a>
+                            </li>
+                            <li>
+                                <a href="#">休闲鞋574</a>
+                                <a href="#">休闲ZX</a>
+                                <a href="#">休闲鞋</a>
+                            </li>
+                        </ul>
+                    </li>
+                     <li>
+                        <h4><a href="#">运动休闲-鞋</a></h4>
+                        <img src="../img/scnbtncat1.jpg"/>
+                        <ul>
+                            <li>
+                                <a href="#">休闲鞋</a>
+                                <a href="#">休鞋</a>
+                                <a href="#">休闲鞋</a>
+                            </li>
+                            <li>
+                                <a href="#">休闲鞋574</a>
+                                <a href="#">休闲ZX</a>
+                                <a href="#">休闲鞋</a>
+                            </li>
+                        </ul>
+                    </li>
+                     <li>
+                        <h4><a href="#">运动休闲-鞋</a></h4>
+                        <img src="../img/scnbtncat1.jpg"/>
+                        <ul>
+                            <li>
+                                <a href="#">休闲鞋</a>
+                                <a href="#">休鞋</a>
+                                <a href="#">休闲鞋</a>
+                            </li>
+                            <li>
+                                <a href="#">休闲鞋574</a>
+                                <a href="#">休闲ZX</a>
+                                <a href="#">休闲鞋</a>
+                            </li>
+                        </ul>
+                    </li>
+                     <li>
+                        <h4><a href="#">运动休闲-鞋</a></h4>
+                        <img src="../img/scnbtncat1.jpg"/>
+                        <ul>
+                            <li>
+                                <a href="#">休闲鞋</a>
+                                <a href="#">休鞋</a>
+                                <a href="#">休闲鞋</a>
+                            </li>
+                            <li>
+                                <a href="#">休闲鞋574</a>
+                                <a href="#">休闲ZX</a>
+                                <a href="#">休闲鞋</a>
+                            </li>
+                        </ul>
+                    </li>
+                     <li>
+                        <h4><a href="#">运动休闲-鞋</a></h4>
+                        <img src="../img/scnbtncat1.jpg"/>
+                        <ul>
+                            <li>
+                                <a href="#">休闲鞋</a>
+                                <a href="#">休鞋</a>
+                                <a href="#">休闲鞋</a>
+                            </li>
+                            <li>
+                                <a href="#">休闲鞋574</a>
+                                <a href="#">休闲ZX</a>
+                                <a href="#">休闲鞋</a>
+                            </li>
+                        </ul>
+                    </li>
+                     <li>
+                        <h4><a href="#">运动休闲-鞋</a></h4>
+                        <img src="../img/scnbtncat1.jpg"/>
+                        <ul>
+                            <li>
+                                <a href="#">休闲鞋</a>
+                                <a href="#">休鞋</a>
+                                <a href="#">休闲鞋</a>
+                            </li>
+                            <li>
+                                <a href="#">休闲鞋574</a>
+                                <a href="#">休闲ZX</a>
+                                <a href="#">休闲鞋</a>
+                            </li>
+                        </ul>
+                    </li>
+                     <li>
+                        <h4><a href="#">运动休闲-鞋</a></h4>
+                        <img src="../img/scnbtncat1.jpg"/>
+                        <ul>
+                            <li>
+                                <a href="#">休闲鞋</a>
+                                <a href="#">休鞋</a>
+                                <a href="#">休闲鞋</a>
+                            </li>
+                            <li>
+                                <a href="#">休闲鞋574</a>
+                                <a href="#">休闲ZX</a>
+                                <a href="#">休闲鞋</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="return_index">
+            <div class="w990"><a href="#"><img src="../img/foot-goto-i.jpg" alt="" /></a></div>
+        </div>
+        <div id="footer">
+            <div class="footer_top">
+            <div class="w1000 g_clear">
+                <div class="ft_l g_fl"><img src="../img/footer_tl.png" alt="" /></div>
+                <ul class="ft_r g_fl">
+                    <li>
+                        <a href="#"><img src="../img/footer_tr1.png" alt="" /><span></span></a>
+                        <h4>支付方式</h4>
+                        <p>
+                            <a href="#">在线支付</a>
+                            <a href="#">货到付款</a>
+                            <a href="#">发票说明</a>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../img/footer_tr2.png" alt="" /><span></span></a>
+                        <h4>售后服务保障</h4>
+                        <p>
+                            <a href="#">退换货说明</a>
+                            <a href="#">服务承诺</a>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../img/footer_tr3.png" alt="" /><span></span></a>
+                        <h4>物流配送</h4>
+                        <p>
+                            <a href="#">合作快递</a>
+                            <a href="#">运费说明</a>
+                            <a href="#">配送时间</a>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="../img/footer_tr4.png" alt="" /><span></span></a>
+                        <h4>会员服务</h4>
+                        <p>
+                            <a href="#">级别和特权</a>
+                            <a href="#">积分政策</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>     
+            </div>
+            <div class="footer_mid"><div class="w1190">
+                <div class="f_links"><a href="#">关于名鞋库</a> | <a href="#">名鞋库资讯</a> | <a href="#">联系名鞋库</a> | <a href="#">人才招聘</a> | <a href="#">免责条款</a>  | <a href="#">法律声明</a> | <a href="#">意见反馈</a> | <a href="#">全部分类</a> | <a href="#">友情链接</a> | <a href="#">鞋码对照表</a> | <a href="#">问答咨询标签主题</a> | <a href="#">鞋子品牌大全</a> | <a href="#">商品大全</a> | <a href="#">扫黄打非</a></div>
+                <p>Copyright © 2008-2014 <strong>s.cn</strong> <a href="#">名鞋库</a> All Rights Reserved.    <a href="#">闽ICP备08106896号</a>    经营许可证闽B2-20110061    <img src="../img/footer_m_icon.png" alt="" />闽公网安备 35020602000166号</p>
+                <div class="imgs">
+                    <a href="#"><img src="../img/footer_m1.png" alt="" /></a>
+                    <a href="#"><img src="../img/footer_m2.png" alt="" /></a>
+                    <a href="#"><img src="../img/footer_m3.png" alt="" /></a>
+                    <a href="#"><img src="../img/footer_m4.png" alt="" /></a>
+                    <a href="#"><img src="../img/footer_m5.png" alt="" /></a>
+                </div>
+            </div></div>
+            <div class="footer_bot"><div class="w1190">
+                <div class="friend_links g_clear">
+                    <h5 class="g_fl">友情链接:</h5>
+                    <ul class="g_fl">
+                        <li><a href="#">服装</a><a href="#">宠物狗</a><a href="#">优惠券</a><a href="#">X团装修网</a><a href="#">商圈</a></li>
+                        <!-- <li><a href="#">猪八戒网</a><a href="#">折800官网</a><a href="#">东方体育直播</a><a href="#">厦门小鱼网</a><a href="#">购物</a><a href="#">火车票</a><a href="#">寻购网</a><a href="#">游多多</a><a href="#">自助游</a><a href="#">酒店预订</a><a href="#">比价网</a></li>
+                        <li><a href="#">服饰搭配</a><a href="#">奢侈品</a><a href="#">名表</a><a href="#">波奇网</a><a href="#">家具网</a><a href="#">马可波罗采购</a><a href="#">中国供应商运动</a><a href="#">小白好豆网</a><a href="#">三叶草</a><a href="#">中国女装网</a></li>
+                        <li><a href="#">匡威</a><a href="#">服装批发</a><a href="#">汽车答疑</a><a href="#">李宁</a><a href="#">阿迪达斯</a><a href="#">中国丽人网</a><a href="#">耐克NIKE</a><a href="#">九正建材网</a><a href="#">时尚女装</a><a href="#">中国品牌网</a></li> -->
+                    </ul>
+                </div>
+            </div></div>
+        </div>
+        <div class="right_bar">
+            <ul class="rb_top">
+                <li><i></i><span>热门活动</span></li>
+                <li><i></i><span>品牌分类</span></li>
+                <li id="rCart"><i><strong>0</strong></i><p><a href="good_cart.html"  style="color:#fff">购物车</a><b></b></p></li>
+                <li><i></i><p>我的订单<b></b></p></li>
+                <li><i></i><p>联系客服<b></b></p></li>
+            </ul>
+            <ul class="rb_bot">
+                <li><i></i><p>我的收藏<b></b></p></li>
+                <li><i></i><p><a href="#"><span></span><em>新浪微博</em></a><a href="#"><span></span><em>腾讯微博</em></a><a href="#"><span></span><em>人人网</em></a><b></b></p></li>
+                <li class="re_top" style="visibility:hidden"><i></i><p>返回顶部<b></b></p></li>
+            </ul>
+        </div>
+        <div class="bot_cart" style="display:none">
+            <!-- <div class="w990 g_clear">
+                <div class="bot_cart_l">
+                    <strong>尺码：</strong>
+                    <span class="g_on">35(建议34码脚穿着)<i></i></span>
+                    <span>36(建议35码脚穿着)<i></i></span>
+                    <span>36.5(建议36码脚穿着)<i></i></span>
+                    <span>37(建议36.5码脚穿着)<i></i></span>
+                    <span>39.5(建议39码脚穿着)<i></i></span>
+                    <span>40(建议39.5码脚穿着)<i></i></span>
+                    <span>41.5(建议41码脚穿着)<i></i></span>
+                    <span>42(建议41.5码脚穿着)<i></i></span>
+                </div>
+                <div class="bot_cart_r">
+                    <strong>数量：</strong>
+                    <span class="bc_decrease"></span>
+                    <input type="text" value="1" class="bc_num">
+                    <span class="bc_increase"></span>
+                    <p>7</p>
+                    <a href="javascript:void(0)"></a>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <script type="text/javascript" src="../lib/require.js" data-main="../js/good_details.js"></script>
+</body>
+</html>

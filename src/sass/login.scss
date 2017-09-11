@@ -1,0 +1,46 @@
+/* 
+* @Author: 陈文贵
+* @Date:   2017-09-03 15:23:27
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-09-03 15:23:48
+*/
+/*头部*/
+.logo{margin-top: 25px;}
+
+/*主要内容*/
+.main{padding-top: 30px;}
+.main_l{margin-right: 50px;}
+.login_box{background: #fafafa;padding:6px 0 40px 25px;width: 380px;border: 1px solid #eee;width: 380px;box-shadow: 3px 3px #F5F5F5;
+    >div{margin-left: 60px;}
+    .mes_tip{padding: 3px 5px 3px 21px;display:inline;height: 25px;font-size: 12px;border: 1px solid #E6594E;white-space: nowrap;color: #E6594E;background: #FCEAE8 url('images/stop.gif') no-repeat 3px;}
+    .input_menu{font-size: 14px;;margin-top: 8px;
+        li{margin-bottom: 14px;
+            label{text-align: right;display:inline-block;color: #666;width: 60px;padding: 0;}
+            input{width: 220px;border: 1px solid rgb(204, 204, 204);height: 22px;line-height: 22px;padding: 3px 5px;color: rgb(0, 0, 0);
+                &#ver_code{width: 65px;}
+            }
+            .ver_code_value{margin: 0 2px;background-color: #EEEEEE;color:#000;letter-spacing: 4px;font-style: italic;user-select:none;display:inline-block;width: 54px;text-align:center;}
+            .ver_code_btn{color:#666;font-size: 12px;user-select:none;
+                &:hover{text-decoration:underline;cursor:pointer;}
+            }
+        }
+    }
+    .to_login{margin-top:18px;margin-bottom: 30px;
+        .login_btn{background: url('images/bg_color.png') no-repeat 0 -198px;width: 89px;height: 38px;color: #fff;font-weight: bold;display:inline-block;text-align: center;line-height: 38px;}
+        .mis_pas{margin-left: 10px;vertical-align: bottom;font-size:12px;color:#777777;
+            &:hover{color:#f00;text-decoration: underline;}
+        }
+    }
+    .to_reg{color: #999;font-size:12px;
+        a{margin-left: 12px;color:#f60;text-decoration: underline;}
+    }
+}
+.login_bot{
+    h4{color:#999;font-size:12px;padding: 10px 0;}
+    a{display:inline-block;margin:0 20px 10px 0;}
+}
+
+/*底部*/
+.login_foot{margin-top: 30px;
+    .w990{border-top: 2px solid #CE3C3B;padding: 20px 0;}
+}

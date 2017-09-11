@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>购物车页</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/good_cart.css" />
+</head>
+<body>
+    <div class="cart_page">
+        <div class="cart_top">
+            <div class="w980 g_clear">
+               <div class="cart_top_l g_fl">欢迎您，<a href="javascript:void(0)" id="uname"></a> ！<a href="javascript:void(0)"  id="logout">[退出]</a></div>
+               <ul class="cart_top_r g_fr">
+                   <li><a href="#">我的订单</a></li>
+                   <li>
+                       <p><a href="#">我的名鞋库</a></p><i class="triangle_icon"></i>
+                       <div class="hd"></div>
+                       <ul class="top_my_drop">
+                           <li><a href="#">我的订单</a></li>
+                           <li><a href="#">我的积分</a></li>
+                           <li><a href="#">优惠券</a></li>
+                           <li><a href="#">商品收藏</a></li>
+                           <li><a href="#">收货地址</a></li>
+                           <li><a href="#">密码管理</a></li>
+                       </ul>
+                   </li>
+                   <li>
+                       <p><a href="#">帮助中心</a></p><i class="triangle_icon"></i>
+                       <div class="hd"></div>
+                       <ul class="top_my_drop">
+                           <li><a href="#">售后中心</a></li>
+                       </ul>
+                   </li>
+               </ul>    
+            </div>
+        </div>
+        <div class="w980">
+            <div class="logo g_clear">
+                <a href="../index.html" title="返回名鞋库首页"><img src="../img/logo.png" alt="" /></a>
+                <div class="logo_r g_fr">
+                    <div class="cart_icon g_fl">
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </div>
+                    <div class="cart_phone g_fl">
+                        <a href="#" class="custom_server">名鞋库客服</a>
+                        <div class="view_history">浏览记录<i class="triangle_icon"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="buy_steps"><img src="../img/cart_step_1.jpg" alt="" /></div>
+            <div class="main">
+                <div class="call_box"><a href="#" class="call_server"></a><a href="#" class="call_phone"></a></div>
+                <h3>我的购物车</h3>
+                <div class="cart_title g_clear">
+                    <div class="cart_title_l g_fl">商品信息</div>
+                    <div class="cart_title_r g_fr">
+                        <span>赠送积分</span>
+                        <span>销售价格</span>
+                        <span>数量</span>
+                        <span>折扣/优惠</span>
+                        <span>小计</span>
+                        <span>操作</span>
+                    </div>
+                </div>
+                <ul class="cart_list">
+                    <!-- <li>
+                        <a href="#" class="pho"><img src="../img/cart_good_1.jpg" alt="" /></a>
+                        <a class="des" href="#">锐步Reebok新款男鞋休闲鞋运动鞋运动休闲V69420 DMQC<span class="details">( 尺码:43（建议44码脚穿着),颜色:红色+白 )</span></a>
+                        <span class="points">0</span>
+                        <span class="price">199</span>
+                        <span class="num"><span class="reduce"></span><input type="text" value="21" /><span class="add"></span></span>
+                        <span class="save">420</span>
+                        <span class="total">3759</span>
+                        <a class="house" href="#"><span>收藏</span><span class="del" href="#">删除</span></a>
+                    </li>
+                     <li>
+                        <a href="#" class="pho"><img src="../img/cart_good_1.jpg" alt="" /></a>
+                        <a class="des" href="#">锐步Reebok新款男鞋休闲鞋运动鞋运动休闲V69420 DMQC<span class="details">( 尺码:43（建议44码脚穿着),颜色:红色+白 )</span></a>
+                        <span class="points">0</span>
+                        <span class="price">199</span>
+                        <span class="num"><span class="reduce"></span><input type="text" value="21" /><span class="add"></span></span>
+                        <span class="save">420</span>
+                        <span class="total">3759</span>
+                        <a class="house" href="#"><span>收藏</span><span class="del" href="#">删除</span></a>
+                    </li> -->
+                </ul>
+                <div class="cart_all g_clear">
+                    <div class="cart_all_cont g_fr">
+                        <div class="cart_num">商品数量：<span class="all_num"></span>件<span class="do_save">享受的优惠：</span>活动价<span class="save_item">满299减10</span><span class="save_item">599减20</span><span class="save_item">999减50</span></div>
+                        <div class="cart_price">商品总金额:<span class="all_price"></span></div>
+                    </div>
+                </div>
+                <div class="cart_bot g_clear">
+                    <div class="tip g_fl"><span>提示：</span>加入购物车的商品无法为您保证库存，请及时下单支付。</div>
+                    <div class="choose g_fr"><a href="../index.html" class="shopping"><i></i>继续购物</a><a href="#" class="check_out">下单结算</a></div>
+                </div>
+            </div>
+            <div class="footer_mid login_foot"><div class="w980">
+                <div class="f_links"><a href="#">关于名鞋库</a> | <a href="#">名鞋库资讯</a> | <a href="#">联系名鞋库</a> | <a href="#">人才招聘</a> | <a href="#">免责条款</a>  | <a href="#">法律声明</a> | <a href="#">意见反馈</a> | <a href="#">全部分类</a> | <a href="#">友情链接</a> | <a href="#">鞋码对照表</a> | <a href="#">问答咨询标签主题</a></div>
+                <p>Copyright © 2008-2014 <strong>s.cn</strong> <a href="#">名鞋库</a> All Rights Reserved.    <a href="#">闽ICP备08106896号</a>    经营许可证闽B2-20110061    <img src="../img/footer_m_icon.png" alt="" />闽公网安备 35020602000166号</p>
+                <div class="imgs">
+                        <a href="#"><img src="../img/footer_m1.png" alt="" /></a>
+                        <a href="#"><img src="../img/footer_m2.png" alt="" /></a>  
+                </div>
+            </div></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../lib/require.js" data-main="../js/good_cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>注册页</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/registered.css" />
+</head>
+<body>
+    <div class="reg_page">
+        <div class="w990">
+            <div class="logo"><a href="../index.html" title="返回名鞋库首页"><img src="../img/newlogo.png" alt="" /></a></div>
+            <div class="link_index"><a href="../index.html">返回首页</a></div>
+            <form action="#" id="reg_form">
+                <div class="content">
+                    <h3>名鞋库用户注册</h3>
+                    <div class="reg_main g_clear">
+                        <div class="reg_main_l g_fl">
+                            <div class="mes_tip" style="visibility:hidden"></div>
+                            <ul class="input_menu">
+                                <li><label for="reg_uname">用户名：</label><input type="text" id="reg_uname" placeholder="邮箱/手机"/></li>
+                                <li><label for="reg_pas">密码：</label><input type="password" id="reg_pas" /></li>
+                                <li><label for="reg_compas">确认密码：</label><input type="password" id="reg_compas" /></li>
+                                <li><label for="ver_code">验证码：</label><input type="text" id="ver_code" /><span class="ver_code_value"></span><span class="ver_code_btn">换个验证码</span></li>
+                            </ul>
+                            <div class="reg_agree">
+                                <input type="checkbox" id="isAgree" checked />
+                                <span>我已阅读并同意</span>
+                                <a href="#">名鞋库会员注册协议</a>。
+                            </div>
+                            <div class="reg_new">注册新用户</div>
+                        </div>
+                        <div class="reg_main_r g_fl">
+                            <div class="text"><strong>已经有名鞋库账号？</strong></div>
+                            <div class="btn"><a href="login.html?from=reg" id="now_login">现在登录</a></div>
+                            <div class="img"><img src="../img/singupmy.png" alt="" /></div>
+                        </div>
+                    </div>
+                </div>
+            </form>   
+        </div>
+        <div class="footer_mid reg_foot"><div class="w990">
+            <div class="f_links"><a href="#">关于名鞋库</a> | <a href="#">名鞋库资讯</a> | <a href="#">联系名鞋库</a> | <a href="#">人才招聘</a> | <a href="#">免责条款</a>  | <a href="#">法律声明</a> | <a href="#">意见反馈</a> | <a href="#">全部分类</a> | <a href="#">友情链接</a> | <a href="#">鞋码对照表</a> | <a href="#">问答咨询标签主题</a> | <a href="#">鞋子品牌大全</a> | <a href="#">商品大全</a> | <a href="#">扫黄打非</a></div>
+            <p>Copyright © 2008-2014 <strong>s.cn</strong> <a href="#">名鞋库</a> All Rights Reserved.    <a href="#">闽ICP备08106896号</a>    经营许可证闽B2-20110061    <img src="../img/footer_m_icon.png" alt="" />闽公网安备 35020602000166号</p>
+        </div></div>
+    </div>
+    <script type="text/javascript" src="../lib/require.js" data-main="../js/registered.js"></script>
+</body>
+</html>

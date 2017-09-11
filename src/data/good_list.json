@@ -1,0 +1,52 @@
+[
+    {
+        "good_id":0001,
+        "big_imgs":["good_1_big_1.jpg"],
+        "small_imgs":["good_1_small_1.jpg"],
+        "price":179,
+        "old_price":359,
+        "text":"LINING李宁 休闲鞋 男 藏黑蓝+新基础黑",
+        "sale_num":69,
+        "sizes":"39、39.5、40、41、41.5、42、43、43.5、44"
+    },
+    {
+        "good_id":0002,
+        "big_imgs":["good_1_big_2.jpg"],
+        "small_imgs":["good_1_small_2.jpg"],
+        "price":3399,
+        "old_price":499,
+        "text":"neo阿迪达斯 休闲鞋 女 1号黑色+1号黑色+亮白",
+        "sale_num":51,
+        "sizes":"36.5、37、38"
+    },
+    {
+        "good_id":0003,
+        "big_imgs":["good_1_big_3.jpg"],
+        "small_imgs":["good_1_small_3.jpg"],
+        "price":199,
+        "old_price":580,
+        "text":"Reebok锐步 休闲鞋 男 红色+白",
+        "sale_num":14,
+        "sizes":"42、43、43.5、44"
+    },
+    {
+        "good_id":0004,
+        "big_imgs":["good_1_big_4.jpg"],
+        "small_imgs":["good_1_small_4.jpg"],
+        "price":219,
+        "old_price":395,
+        "text":"DCdc 休闲鞋 男 白色",
+        "sale_num":20,
+        "sizes":"37"
+    },
+    {
+        "good_id":0005,
+        "big_imgs":["gl_big_11.jpg","gl_big_12.jpg"],
+        "small_imgs":["gl_small_11.jpg","gl_small_12.jpg"],
+        "price":329,
+        "old_price":469,
+        "text":"CONVERSE匡威 帆布鞋 中性 黑色",
+        "sale_num":53,
+        "sizes":"35、36、36.5、37、39.5、40、41.5、42"
+    }
+]

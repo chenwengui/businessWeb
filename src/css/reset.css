@@ -1,0 +1,40 @@
+/* 
+* @Author: 陈文贵
+* @Date:   2017-09-01 09:13:12
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-09-01 17:29:13
+*/
+/*清楚默认样式*/
+html,body,p,h1,h2,h3,h4,h5,ul{
+    margin: 0;
+    padding: 0;
+} 
+h1,h2,h3,h4,h5{
+    font-weight: normal;
+} 
+img{
+    border:0 none;
+}
+ul{list-style: none;} 
+a{text-decoration: none;}
+i{font-style: normal;}
+input{outline: none;}
+
+/*公用样式*/
+.g_fl{
+    float: left;
+}
+.g_fr{
+    float: right;
+}
+.g_clear:after{
+    content: "";
+    height: 0;
+    visibility: hidden;
+    clear:both;
+    display:block;
+    overflow: hidden;
+}
+.g_clear{
+    zoom: 1;
+}

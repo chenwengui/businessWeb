@@ -1,0 +1,14 @@
+/* 
+* @Author: 陈文贵
+* @Date:   2017-09-01 09:13:30
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-09-04 11:03:09
+*/
+/*通用样式*/
+.page{min-width: 1190px;}
+.reg_page{min-width: 990px;}
+.w1190{width: 1190px;margin: 0 auto;}
+.w1000{width: 1000px;margin: 0 auto;}
+.w990{width: 990px;margin: 0 auto;}
+.w980{width: 980px;margin: 0 auto;}
+.triangle_icon{position: absolute;top: 6px;right: 10px;height: 0;width: 0;border-width: 4px 4px 0;border-style: solid dashed dashed;border-color: #666 transparent transparent;z-index:7;}

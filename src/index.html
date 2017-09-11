@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+<body>
+    <div class="page">
+        <div id="header">
+            <div class="head_top">
+                <div class="w1190">
+                    <ul class="top_menu">
+                        <li>
+                            <div class="login_reg" >
+                                <a href="html/login.html" id="login">欢迎登录名鞋库</a><a href="html/registered.html" id="reg">免费注册</a>
+                            </div>
+                            <div class="logined" style="display:none">欢迎您，<span id="uname"></span>！<a href="javascript:void(0)" id="logout">[退出]</a></div>
+                        </li>
+                        <li>
+                            <p><a href="#">我的名鞋库</a></p><i class="triangle_icon"></i>
+                            <div class="hd"></div>
+                            <ul class="top_my_drop">
+                                <li><a href="#">我的订单</a></li>
+                                <li><a href="#">我的积分</a></li>
+                                <li><a href="#">优惠券</a></li>
+                                <li><a href="#">商品收藏</a></li>
+                                <li><a href="#">收货地址</a></li>
+                                <li><a href="#">密码管理</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><a href="#">手机名鞋库</a></p><i class="triangle_icon"></i>
+                            <div class="hd"></div>
+                            <div class="top_phone_drop">
+                                <img src="img/header_wx1.png" height="120" width="100" alt="" />
+                                <img src="img/header_wx2.png" alt="" />
+                            </div>
+                        </li>
+                        <li><a href="#">收藏名鞋库</a></li>
+                        <li><a href="#">名鞋库客服<i></i></a></li>
+                        <li><i></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="head_middle">
+                <div class="w1190 g_clear">
+                    <div class="logo g_fl"><a href="#"><img src="img/transparent.gif" width="421" height="63" alt="欢迎来到名鞋库网上鞋城!"></a></div>
+                    <div class="head_cart g_fr">
+                        <a href="javascript:void(0)">购物车<strong class="cart_num">0</strong>件</a>
+                        <div class="cart_detail">
+                            <ul class="hd_cart_list"><!-- 
+                                <li>
+                                    <img src="img/cart_good_1.jpg" height="150" width="150" alt="" />
+                                    <p>锐步Reebok新款男鞋休闲鞋运动鞋运动休闲V69420 DMQC(尺码:42（建议42.5码脚穿着),颜色:红色+白)</p>
+                                    <span class="good_num">2</span>
+                                    <div class="good_r"><span class="price">179</span><span class="delBtn">[删除]</span></div>
+                                </li>
+                                <li>
+                                    <img src="img/cart_good_1.jpg"/>
+                                    <p>锐步Reebok新款男鞋休闲鞋运动鞋运动休闲V69420 DMQC(尺码:42（建议42.5码脚穿着),颜色:红色+白)</p>
+                                    <span class="good_num">2</span>
+                                    <div class="good_r"><span class="price good_price">179</span><span class="delBtn">[删除]</span></div>
+                                </li> -->
+                            </ul>
+                            <div class="hd_cart_checkout">
+                                商品总价：<span class="total_price price"></span><br /><a href="html/good_cart.html"><img src="img/hd_check_out.png" height="21" width="76" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="head_search g_fl">
+                        <form action="#" id="form1">
+                            <input type="text"  id="hd_searchText" />
+                            <input type="submit" value="搜索" id="hd_searchBtn" />
+                        </form>
+                        <div class="keyword">热搜：<a href="#">跑步鞋</a><a href="html/goods_list.html">跑步鞋</a><a href="html/goods_list.html">跑鞋</a><a href="html/goods_list.html">跑萨达鞋</a><a href="html/goods_list.html">跑asd鞋</a><a href="html/goods_list.html">跑步鞋</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="head_nav">
+                <div class="w1190 g_clear">
+                    <div class="hd_nav_l g_fl">所有商品分类
+                        <ul class="nav_bar">
+                            <li>
+                                <i class="bg">&nbsp;</i>
+                                <a href="html/goods_list.html?type=type1">运动休闲鞋</a>
+                                <i class="arror"></i>
+                                <ul class="nav_two">
+                                    <li>
+                                        <h3><i></i>男子运动鞋<a href="html/goods_list.html?type=type1" class="more">更多</a></h3>
+                                        <p>
+                                            <a href="html/goods_list.html?type=type1">2017新品</a>
+                                            <a href="html/goods_list.html?type=type1" class="g_hot">篮球鞋</a>
+                                            <a href="html/goods_list.html?type=type1">2017新品</a>
+                                            <a href="html/goods_list.html?type=type1">篮球鞋</a>
+                                            <a href="html/goods_list.html?type=type1">NBA</a>
+                                            <a href="html/goods_list.html?type=type1">篮球鞋</a>
+                                            <a href="html/goods_list.html?type=type1">2017新品</a>
+                                            <a href="html/goods_list.html?type=type1">篮鞋</a>
+                                            <a href="html/goods_list.html?type=type1">2017新品</a>
+                                            <a href="html/goods_list.html?type=type1">篮球鞋</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h3>热搜系列</h3>
+                                        <p>
+                                            <a href="html/goods_list.html?type=type1">2017新品</a>
+                                            <a href="html/goods_list.html?type=type1">乔丹</a>
+                                            <a href="html/goods_list.html?type=type1">篮球鞋</a>
+                                            <a href="html/goods_list.html?type=type1" class="g_hot">科比</a>
+                                            <a href="html/goods_list.html?type=type1">篮球鞋</a>
+                                            <a href="html/goods_list.html?type=type1">NBA</a>
+                                            <a href="html/goods_list.html?type=type1">篮球鞋</a>
+                                            <a href="html/goods_list.html?type=type1" class="g_hot">库里</a>
+                                            <a href="html/goods_list.html?type=type1">篮鞋</a>
+                                            <a href="html/goods_list.html?type=type1">2017新品</a>
+                                            <a href="html/goods_list.html?type=type1">篮球鞋</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h3>热门名词</h3>
+                                        <p>
+                                            <a href="html/goods_list.html?type=type1">阿迪达斯</a>
+                                            <a href="html/goods_list.html?type=type1" class="g_hot">耐克</a>
+                                            <a href="html/goods_list.html?type=type1">李宁</a>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <i class="bg">&nbsp;</i>
+                                <a href="html/goods_list.html?type=type1">运动休闲服</a>
+                                <i class="arror"></i>
+                                <ul class="nav_two">
+                                    <li>
+                                        <h3><i></i>男子休闲服<a href="html/goods_list.html?type=type1" class="more">更多</a></h3>
+                                        <p>
+                                            <a href="html/goods_list.html?type=type1">2017新品</a>
+                                            <a href="html/goods_list.html?type=type1" class="g_hot">篮球鞋</a>
+                                            <a href="html/goods_list.html?type=type1">2017新品</a>
+                                            <a href="html/goods_list.html?type=type1">篮球鞋</a>
+                                            <a href="html/goods_list.html?type=type1">NBA</a>
+                                            <a href="html/goods_list.html?type=type1">篮球鞋</a>
+                                            <a href="html/goods_list.html?type=type1">2017新品</a>
+                                            <a href="html/goods_list.html?type=type1">篮鞋</a>
+                                            <a href="html/goods_list.html?type=type1">2017新品</a>
+                                            <a href="html/goods_list.html?type=type1">篮球鞋</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h3>热搜系列</h3>
+                                        <p>
+                                            <a href="html/goods_list.html?type=type1">2017新品</a>
+                                            <a href="html/goods_list.html?type=type1">乔丹</a>
+                                            <a href="html/goods_list.html?type=type1">篮球鞋</a>
+                                            <a href="html/goods_list.html?type=type1" class="g_hot">科比</a>
+                                            <a href="html/goods_list.html?type=type1">篮球鞋</a>
+                                            <a href="html/goods_list.html?type=type1">NBA</a>
+                                            <a href="html/goods_list.html?type=type1">篮球鞋</a>
+                                            <a href="html/goods_list.html?type=type1" class="g_hot">库里</a>
+                                            <a href="html/goods_list.html?type=type1">篮鞋</a>
+                                            <a href="html/goods_list.html?type=type1">2017新品</a>
+                                            <a href="html/goods_list.html?type=type1">篮球鞋</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h3>热门搜索</h3>
+                                        <p>
+                                            <a href="html/goods_list.html?type=type1">阿迪达斯</a>
+                                            <a href="html/goods_list.html?type=type1" class="g_hot">耐克</a>
+                                            <a href="html/goods_list.html?type=type1">李宁</a>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <i class="bg">&nbsp;</i>
+                                <a href="html/goods_list.html?type=type1">跑步</a>
+                                <i class="arror"></i>
+                                <ul class="nav_two">
+                                    <li>
+                                        <h3><i></i>男子跑步<a href="html/goods_list.html?type=type1" class="more">更多</a></h3>
+                                        <p>
+                                            <a href="html/goods_list.html?type=type1">2017新品</a>
+                                            <a href="html/goods_list.html?type=type1" class="g_hot">篮球鞋</a>
+                                            <a href="html/goods_list.html?type=type1">2017新品</a>
+                                            <a href="html/goods_list.html?type=type1">篮球鞋</a>
+                                            <a href="html/goods_list.html?type=type1">NBA</a>
+                                            <a href="html/goods_list.html?type=type1">篮球鞋</a>
+                                            <a href="html/goods_list.html?type=type1">2017新品</a>
+                                            <a href="html/goods_list.html?type=type1">篮鞋</a>
+                                            <a href="html/goods_list.html?type=type1">2017新品</a>
+                                            <a href="html/goods_list.html?type=type1">篮球鞋</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h3>热搜系列</h3>
+                                        <p>
+                                            <a href="html/goods_list.html?type=type1">2017新品</a>
+                                            <a href="html/goods_list.html?type=type1">乔丹</a>
+                                            <a href="html/goods_list.html?type=type1">篮球鞋</a>
+                                            <a href="html/goods_list.html?type=type1" class="g_hot">科比</a>
+                                            <a href="html/goods_list.html?type=type1">篮球鞋</a>
+                                            <a href="html/goods_list.html?type=type1">NBA</a>
+                                            <a href="html/goods_list.html?type=type1">篮球鞋</a>
+                                            <a href="html/goods_list.html?type=type1" class="g_hot">库里</a>
+                                            <a href="html/goods_list.html?type=type1">篮鞋</a>
+                                            <a href="html/goods_list.html?type=type1">2017新品</a>
+                                            <a href="html/goods_list.html?type=type1">篮球鞋</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h3>热门品牌</h3>
+                                        <p>
+                                            <a href="html/goods_list.html?type=type1">阿迪达斯</a>
+                                            <a href="html/goods_list.html?type=type1" class="g_hot">耐克</a>
+                                            <a href="html/goods_list.html?type=type1">李宁</a>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <i class="bg">&nbsp;</i>
+                                <a href="html/goods_list.html?type=type1">篮球</a>
+                                <i class="arror"></i>
+                                <ul class="nav_two">
+                                    <li>
+                                        <h3><i></i>篮球<a href="html/goods_list.html?type=type1" class="more">更多</a></h3>
+                                        <p>
+                                            <a href="html/goods_list.html?type=type1">2017新品</a>
+                                            <a href="html/goods_list.html?type=type1" class="g_hot">篮球鞋</a>
+                                            <a href="html/goods_list.html?type=type1">2017新品</a>
+                                            <a href="html/goods_list.html?type=type1">篮球鞋</a>
+                                            <a href="html/goods_list.html?type=type1">NBA</a>
+                                            <a href="html/goods_list.html?type=type1">篮球鞋</a>
+                                            <a href="html/goods_list.html?type=type1">2017新品</a>
+                                            <a href="html/goods_list.html?type=type1">篮鞋</a>
+                                            <a href="html/goods_list.html?type=type1">2017新品</a>
+                                            <a href="html/goods_list.html?type=type1">篮球鞋</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h3>明星系列</h3>
+                                        <p>
+                                            <a href="html/goods_list.html?type=type1">2017新品</a>
+                                            <a href="html/goods_list.html?type=type1">乔丹</a>
+                                            <a href="html/goods_list.html?type=type1">篮球鞋</a>
+                                            <a href="html/goods_list.html?type=type1" class="g_hot">科比</a>
+                                            <a href="html/goods_list.html?type=type1">篮球鞋</a>
+                                            <a href="html/goods_list.html?type=type1">NBA</a>
+                                            <a href="html/goods_list.html?type=type1">篮球鞋</a>
+                                            <a href="html/goods_list.html?type=type1" class="g_hot">库里</a>
+                                            <a href="html/goods_list.html?type=type1">篮鞋</a>
+                                            <a href="html/goods_list.html?type=type1">2017新品</a>
+                                            <a href="html/goods_list.html?type=type1">篮球鞋</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h3>热搜品牌</h3>
+                                        <p>
+                                            <a href="html/goods_list.html?type=type1">阿迪达斯</a>
+                                            <a href="html/goods_list.html?type=type1" class="g_hot">耐克</a>
+                                            <a href="html/goods_list.html?type=type1">李宁</a>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <i class="bg">&nbsp;</i>
+                                <a href="html/goods_list.html?type=type1">足球</a>
+                                <i class="arror"></i>
+                            </li>
+                            <li>
+                                <i class="bg">&nbsp;</i>
+                                <a href="html/goods_list.html?type=type1">包包/配件</a>
+                                <i class="arror"></i>
+                            </li>
+                            <li>
+                                <i class="bg">&nbsp;</i>
+                                <a href="html/goods_list.html?type=type1">户外</a>
+                                <i class="arror"></i>
+                            </li>
+                            <li>
+                                <i class="bg">&nbsp;</i>
+                                <a href="html/goods_list.html?type=type1">男鞋</a>
+                                <i class="arror"></i>
+                            </li>
+                            <li>
+                                <i class="bg">&nbsp;</i>
+                                <a href="html/goods_list.html?type=type1">童鞋</a>
+                                <i class="arror"></i>
+                            </li>
+                             <li>
+                                <i class="bg">&nbsp;</i>
+                                <a href="html/goods_list.html?type=type1">2017新品专区</a>
+                                <i class="arror"></i>
+                            </li>
+                             <li>
+                                <i class="bg">&nbsp;</i>
+                                <a href="html/goods_list.html?type=type1">断码清仓专区</a>
+                                <i class="arror"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="hd_nav_c g_fl">
+                        <li><a href="javascript:void(0)">首页</a></li>
+                        <li><a href="html/goods_list.html?type=type1">男子运动</a>
+                            <div class="nav_box">
+                                <ul>
+                                    <li>
+                                        <h4>运动鞋</h4>
+                                        <p>
+                                            <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                            <a href="html/goods_list.html?type=type1">休鞋</a>
+                                            <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                            <a href="html/goods_list.html?type=type1">休鞋</a>
+                                            <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                            <a href="html/goods_list.html?type=type1">闲鞋</a>
+                                            <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                            <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                            <a href="html/goods_list.html?type=type1">闲鞋</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>服装</h4>
+                                        <p>
+                                            <a href="html/goods_list.html?type=type1">短袖T學</a>
+                                            <a href="html/goods_list.html?type=type1">短袖Polp</a>
+                                            <a href="html/goods_list.html?type=type1">短T學</a>
+                                            <a href="html/goods_list.html?type=type1">短袖T學</a>
+                                            <a href="html/goods_list.html?type=type1">短袖</a>
+                                            <a href="html/goods_list.html?type=type1">短學</a>
+                                            <a href="html/goods_list.html?type=type1">短袖T學</a>
+                                        </p>
+                                    </li>
+                                    <li class="nb_brand">
+                                        <h4>品牌推荐</h4>
+                                        <p><a href=""><img src="img/nb.jpg"/></a></p>
+                                        <p><a href=""><img src="img/nb.jpg"/></a></p>
+                                        <p><a href=""><img src="img/nb.jpg"/></a></p>
+                                        <p><a href=""><img src="img/nb.jpg"/></a></p>
+                                        <p><a href=""><img src="img/nb.jpg"/></a></p>
+                                        <p><a href=""><img src="img/nb.jpg"/></a></p>
+                                        <p><a href=""><img src="img/nb.jpg"/></a></p>
+                                        <p><a href=""><img src="img/nb.jpg"/></a></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="html/goods_list.html?type=type1">女子运动</a>
+                        </li>
+                        <li><a href="html/goods_list.html?type=type1">儿童</a>
+                        </li>
+                        <li><a href="html/goods_list.html?type=type1">男鞋</a></li>
+                        <li><a href="html/goods_list.html?type=type1">户外</a></li>
+                    </ul>
+                    <div class="hd_nav_wx g_fl"><span></span><img src="img/header_wx3.png" height="165" width="165" alt="" /></div>
+                    <ul class="hd_nav_r g_fr">
+                        <li><a href="html/goods_list.html?type=type1">上新区</a></li>
+                        <li><a href="html/goods_list.html?type=type1">即将售罄</a></li>
+                        <li><a href="html/goods_list.html?type=type1" class="g_cur">逢八必杀</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="rotation_column">
+            <ul class="ratation_imgs">
+                <li><a href="html/goods_list.html?type=type2"><img src="img/jd1.jpg" alt="" /></a></li>
+                <li><a href="html/goods_list.html?type=type2"><img src="img/jd2.jpg" alt="" /></a></li>
+                <li><a href="html/goods_list.html?type=type2"><img src="img/jd3.jpg" alt="" /></a></li>
+                <li><a href="html/goods_list.html?type=type2"><img src="img/jd4.jpg" alt="" /></a></li>
+            </ul>
+            <ul class="racation_nav_icons">
+                <li class="g_on"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div id="main">
+            <div class="w1190">
+                <div class="brand_column g_clear">
+                    <ul class="brand_c_l g_fl">
+                        <li><a href="html/goods_list.html?type=type2"><span></span></a></li>
+                        <li><a href="html/goods_list.html?type=type2"><span></span></a></li>
+                        <li><a href="html/goods_list.html?type=type2"><span></span></a></li>
+                        <li><a href="html/goods_list.html?type=type2"><span></span></a></li>
+                        <li><a href="html/goods_list.html?type=type2"><span></span></a></li>
+                        <li><a href="html/goods_list.html?type=type2"><span></span></a></li>
+                        <li><a href="html/goods_list.html?type=type2"><span></span></a></li>
+                        <li><a href="html/goods_list.html?type=type2"><span></span></a></li>
+                        <li><a href="html/goods_list.html?type=type2"><span></span></a></li>
+                        <li><a href="html/goods_list.html?type=type2"><span></span></a></li>
+                        <li><a href="html/goods_list.html?type=type2"><span></span></a></li>
+                        <li><a href="html/goods_list.html?type=type2"><span></span></a></li>
+                        <li><a href="html/goods_list.html?type=type2"><span></span></a></li>
+                        <li><a href="html/goods_list.html?type=type2"><span></span></a></li>
+                        <li><a href="html/goods_list.html?type=type2"><span></span></a></li>
+                        <li><a href="html/goods_list.html?type=type2"><span></span></a></li>
+                        <li><a href="html/goods_list.html?type=type2"><span></span></a></li>
+                        <li><a href="html/goods_list.html?type=type2"><span></span></a></li>
+                        <li><a href="html/goods_list.html?type=type2"><span></span></a></li>
+                        <li><a href="html/goods_list.html?type=type2"><span></span></a></li>
+                        <li><a href="html/goods_list.html?type=type2"><span></span></a></li>
+                    </ul>
+                    <div class="brand_c_r g_fr">
+                        <ul class="brand_r_top">
+                            <li><span></span><a href="html/goods_list.html?type=type2">颜王撩妹，运动风全程开挂！</a></li>
+                            <li><span></span><a href="html/goods_list.html?type=type2">说走就走，用一场旅行致青春</a></li>
+                            <li><span></span><a href="html/goods_list.html?type=type2">DC潮货出没，帅得犯规！</a></li>
+                        </ul>
+                        <div class="brand_r_mid"><img src="img/brand_r_mid.png"/></div>
+                        <div class="brand_r_bot">
+                            <div class="content_imgs">
+                                <img src="img/brand_r_img1.jpg"/><img src="img/brand_r_img2.jpg"/>
+                            </div>
+                            <ul class="content_tags">
+                                <li></li>
+                                <li class="g_on"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <ul class="new_column g_clear">
+                    <li><a href="html/goods_list.html?type=type2"><img src="img/index_zj1.jpg" alt="" /><span></span></a></li>
+                    <li><a href="html/goods_list.html?type=type2"><img src="img/index_zj2.jpg" alt="" /><span></span></a></li>
+                    <li><a href="html/goods_list.html?type=type2"><img src="img/index_zj3.jpg" alt="" /><span></span></a></li>
+                    <li><a href="html/goods_list.html?type=type2"><img src="img/index_zj4.jpg" alt="" /><span></span></a></li>
+                    <li><a href="html/goods_list.html?type=type2"><img src="img/index_zj5.jpg" alt="" /><span></span></a></li>
+                </ul>
+                <ul class="hot_column g_clear">
+                    <li>
+                        <div class="hot_item_l g_fl"><img src="img/menu_01.png"/></div>
+                        <ul class="hot_item_c g_fl">
+                            <li class="hot_shoes g_on"></li>
+                            <li class="hot_clothes"></li>
+                        </ul>
+                        <div class="hot_item_r g_fl">
+                            <ul class="g_show g_clear">
+                                <li>
+                                    <h4>类别</h4>
+                                    <p>
+                                        <a href="html/goods_list.html?type=type2">休闲鞋</a>
+                                        <a href="html/goods_list.html?type=type2">休闲鞋</a>
+                                        <a href="html/goods_list.html?type=type2">休鞋</a>
+                                        <a href="html/goods_list.html?type=type2">休闲鞋</a>
+                                        <a href="html/goods_list.html?type=type2">休闲鞋</a>
+                                        <a href="html/goods_list.html?type=type2">休闲鞋</a>
+                                        <a href="html/goods_list.html?type=type2">休闲鞋</a>
+                                        <a href="html/goods_list.html?type=type2">闲鞋</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <h4>场景</h4>
+                                    <p>
+                                        <a href="html/goods_list.html?type=type2">休闲</a>
+                                        <a href="html/goods_list.html?type=type2">休闲</a>
+                                        <a href="html/goods_list.html?type=type2">休闲</a>
+                                        <a href="html/goods_list.html?type=type2">休闲</a>
+                                        <a href="html/goods_list.html?type=type2">休闲</a>
+                                        <a href="html/goods_list.html?type=type2">休闲</a>
+                                    </p>
+                                </li>
+                            </ul>
+                            <ul class="g_show g_clear" style="display:none;">
+                                <li>
+                                    <h4>类别</h4>
+                                    <p>
+                                        <a href="html/goods_list.html?type=type2">休闲衣服</a>
+                                        <a href="html/goods_list.html?type=type2">休闲衣服</a>
+                                        <a href="html/goods_list.html?type=type2">休鞋</a>
+                                        <a href="html/goods_list.html?type=type2">休闲衣服</a>
+                                        <a href="html/goods_list.html?type=type2">休闲衣服</a>
+                                        <a href="html/goods_list.html?type=type2">休闲衣服</a>
+                                        <a href="html/goods_list.html?type=type2">休闲衣服</a>
+                                        <a href="html/goods_list.html?type=type2">闲衣服</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <h4>场景</h4>
+                                    <p>
+                                        <a href="html/goods_list.html?type=type2">休闲</a>
+                                        <a href="html/goods_list.html?type=type2">篮球</a>
+                                        <a href="html/goods_list.html?type=type2">休闲</a>
+                                        <a href="html/goods_list.html?type=type2">篮球</a>
+                                        <a href="html/goods_list.html?type=type2">休闲</a>
+                                        <a href="html/goods_list.html?type=type2">休闲</a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>    
+                    </li>
+                    <li>
+                        <div class="hot_item_l g_fl"><img src="img/menu_04.png"/></div>
+                        <ul class="hot_item_c g_fl">
+                            <li class="hot_shoes g_on"></li>
+                            <li class="hot_clothes"></li>
+                        </ul>
+                        <div class="hot_item_r g_fl">
+                            <ul class="g_show g_clear">
+                                <li>
+                                    <h4>类别</h4>
+                                    <p>
+                                        <a href="html/goods_list.html?type=type2">运动鞋</a>
+                                        <a href="html/goods_list.html?type=type2">运动鞋</a>
+                                        <a href="html/goods_list.html?type=type2">休鞋</a>
+                                        <a href="html/goods_list.html?type=type2">运动鞋</a>
+                                        <a href="html/goods_list.html?type=type2">运动鞋</a>
+                                        <a href="html/goods_list.html?type=type2">运动鞋</a>
+                                        <a href="html/goods_list.html?type=type2">运动鞋</a>
+                                        <a href="html/goods_list.html?type=type2">闲鞋</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <h4>场景</h4>
+                                    <p>
+                                        <a href="html/goods_list.html?type=type2">运动</a>
+                                        <a href="html/goods_list.html?type=type2">运动</a>
+                                        <a href="html/goods_list.html?type=type2">运动</a>
+                                        <a href="html/goods_list.html?type=type2">运动</a>
+                                        <a href="html/goods_list.html?type=type2">运动</a>
+                                        <a href="html/goods_list.html?type=type2">休闲</a>
+                                    </p>
+                                </li>
+                            </ul>
+                            <ul class="g_show g_clear" style="display:none;">
+                                <li>
+                                    <h4>类别</h4>
+                                    <p>
+                                        <a href="html/goods_list.html?type=type2">休闲衣服</a>
+                                        <a href="html/goods_list.html?type=type2">休闲衣服</a>
+                                        <a href="html/goods_list.html?type=type2">休鞋</a>
+                                        <a href="html/goods_list.html?type=type2">休闲衣服</a>
+                                        <a href="html/goods_list.html?type=type2">休闲衣服</a>
+                                        <a href="html/goods_list.html?type=type2">休闲衣服</a>
+                                        <a href="html/goods_list.html?type=type2">休闲衣服</a>
+                                        <a href="html/goods_list.html?type=type2">闲衣服</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <h4>场景</h4>
+                                    <p>
+                                        <a href="html/goods_list.html?type=type2">休闲</a>
+                                        <a href="html/goods_list.html?type=type2">篮球</a>
+                                        <a href="html/goods_list.html?type=type2">休闲</a>
+                                        <a href="html/goods_list.html?type=type2">篮球</a>
+                                        <a href="html/goods_list.html?type=type2">休闲</a>
+                                        <a href="html/goods_list.html?type=type2">休闲</a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>    
+                    </li>
+                    <li>
+                        <div class="hot_item_l g_fl"><img src="img/menu_03.png"/></div>
+                        <div class="hot_item_r g_fl">
+                            <ul class="g_show g_clear">
+                                <li>
+                                    <h4>类别</h4>
+                                    <p>
+                                        <a href="html/goods_list.html?type=type2">休闲鞋</a>
+                                        <a href="html/goods_list.html?type=type2">休闲鞋</a>
+                                        <a href="html/goods_list.html?type=type2">休鞋</a>
+                                        <a href="html/goods_list.html?type=type2">休闲鞋</a>
+                                        <a href="html/goods_list.html?type=type2">休闲鞋</a>
+                                        <a href="html/goods_list.html?type=type2">休闲鞋</a>
+                                        <a href="html/goods_list.html?type=type2">休闲鞋</a>
+                                        <a href="html/goods_list.html?type=type2">闲鞋</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <h4>场景</h4>
+                                    <p>
+                                        <a href="html/goods_list.html?type=type2">休闲</a>
+                                        <a href="html/goods_list.html?type=type2">休闲</a>
+                                        <a href="html/goods_list.html?type=type2">休闲</a>
+                                        <a href="html/goods_list.html?type=type2">休闲</a>
+                                        <a href="html/goods_list.html?type=type2">休闲</a>
+                                        <a href="html/goods_list.html?type=type2">休闲</a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>    
+                    </li>
+                </ul>
+                <div class="stairs_column">
+                    <div class="stair g_clear">
+                        <div class="stair_l g_fl">
+                            <div class="stair_l_top"><a href="html/goods_list.html?type=type1"><img src="img/s1fhead.png"/></a></div>
+                            <div class="stair_l_mid">
+                                <a href="html/goods_list.html?type=type1">耐克</a>
+                                <a href="html/goods_list.html?type=type1">阿迪达斯</a>
+                                <a href="html/goods_list.html?type=type1">耐克</a>
+                                <a href="html/goods_list.html?type=type1">阿迪达斯</a>
+                                <a href="html/goods_list.html?type=type1">耐克</a>
+                                <a href="html/goods_list.html?type=type1">阿迪达斯</a>
+                                <a href="html/goods_list.html?type=type1">耐克</a>
+                                <a href="html/goods_list.html?type=type1">阿迪达斯</a>
+                                <a href="html/goods_list.html?type=type1">耐克</a>
+                                <a href="html/goods_list.html?type=type1">阿迪达斯</a>
+                                <a href="html/goods_list.html?type=type1">耐克</a>
+                                <a href="html/goods_list.html?type=type1">阿迪达斯</a>
+                            </div>
+                            <ul class="stair_l_bot g_clear">
+                                <li>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                    <a href="html/goods_list.html?type=type1">Nb休闲鞋</a>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋asdd</a>
+                                </li>
+                                <li>
+                                    <a href="html/goods_list.html?type=type1">休鞋</a>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋aa</a>
+                                    <a href="html/goods_list.html?type=type1">休闲闲鞋</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="stair_c g_fl"><a href="html/goods_list.html?type=type1"><img src="img/l1.jpg" alt="" /></a></div>
+                        <div class="stair_r g_fl">
+                            <a href="html/goods_list.html?type=type1"><img src="img/l1-1.jpg"/></a>
+                            <a href="html/goods_list.html?type=type1"><img src="img/l1-2.jpg"/></a>
+                            <a href="html/goods_list.html?type=type1"><img src="img/l1-3.jpg"/></a>
+                            <a href="html/goods_list.html?type=type1"><img src="img/l1-4.jpg"/></a>
+                            <a href="html/goods_list.html?type=type1"><img src="img/l1-5.jpg"/></a>
+                            <a href="html/goods_list.html?type=type1"><img src="img/l1-6.jpg"/></a>
+                        </div>
+                    </div>
+                    <div class="stair g_clear">
+                        <div class="stair_l g_fl">
+                            <div class="stair_l_top"><a href="html/goods_list.html?type=type3"><img src="img/s2fhead.png"/></a></div>
+                            <div class="stair_l_mid">
+                                <a href="html/goods_list.html?type=type3">耐克</a>
+                                <a href="html/goods_list.html?type=type3">阿迪达斯</a>
+                                <a href="html/goods_list.html?type=type3">耐克</a>
+                                <a href="html/goods_list.html?type=type3">阿迪达斯</a>
+                                <a href="html/goods_list.html?type=type3">耐克</a>
+                                <a href="html/goods_list.html?type=type3">阿迪达斯</a>
+                                <a href="html/goods_list.html?type=type3">耐克</a>
+                                <a href="html/goods_list.html?type=type3">阿迪达斯</a>
+                                <a href="html/goods_list.html?type=type3">耐克</a>
+                                <a href="html/goods_list.html?type=type3">阿迪达斯</a>
+                                <a href="html/goods_list.html?type=type3">耐克</a>
+                                <a href="html/goods_list.html?type=type3">阿迪达斯</a>
+                            </div>
+                            <ul class="stair_l_bot g_clear">
+                                <li>
+                                    <a href="html/goods_list.html?type=type3">休闲鞋</a>
+                                    <a href="html/goods_list.html?type=type3">休闲鞋</a>
+                                    <a href="html/goods_list.html?type=type3">Nb休闲鞋</a>
+                                    <a href="html/goods_list.html?type=type3">休闲鞋asdd</a>
+                                </li>
+                                <li>
+                                    <a href="html/goods_list.html?type=type3">休鞋</a>
+                                    <a href="html/goods_list.html?type=type3">休闲鞋</a>
+                                    <a href="html/goods_list.html?type=type3">休闲鞋aa</a>
+                                    <a href="html/goods_list.html?type=type3">休闲闲鞋</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="stair_c g_fl"><a href="html/goods_list.html?type=type3"><img src="img/l2.jpg" alt="" /></a></div>
+                        <div class="stair_r g_fl">
+                            <a href="html/goods_list.html?type=type3"><img src="img/l2-1.jpg"/></a>
+                            <a href="html/goods_list.html?type=type3"><img src="img/l2-2.jpg"/></a>
+                            <a href="html/goods_list.html?type=type3"><img src="img/l2-3.jpg"/></a>
+                            <a href="html/goods_list.html?type=type3"><img src="img/l2-4.jpg"/></a>
+                            <a href="html/goods_list.html?type=type3"><img src="img/l2-5.jpg"/></a>
+                            <a href="html/goods_list.html?type=type3"><img src="img/l2-6.jpg"/></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="rom_brand_nav g_clear">
+                    <a href="html/goods_list.html?type=type1"><span></span></a>
+                    <a href="html/goods_list.html?type=type1"><span></span></a>
+                    <a href="html/goods_list.html?type=type1"><span></span></a>
+                    <a href="html/goods_list.html?type=type1"><span></span></a>
+                    <a href="html/goods_list.html?type=type1"><span></span></a>
+                    <a href="html/goods_list.html?type=type1"><span></span></a>
+                    <a href="html/goods_list.html?type=type1"><span></span></a>
+                    <a href="html/goods_list.html?type=type1"><span></span></a>
+                    <a href="html/goods_list.html?type=type1"><span></span></a>
+                    <a href="html/goods_list.html?type=type1"><span></span></a>
+                    <a href="html/goods_list.html?type=type1"><span></span></a>
+                    <a href="html/goods_list.html?type=type1"><span></span></a>
+                    <a href="html/goods_list.html?type=type1"><span></span></a>
+                    <a href="html/goods_list.html?type=type1"><span></span></a>
+                    <a href="html/goods_list.html?type=type1"><span></span></a>
+                    <a href="html/goods_list.html?type=type1"><span></span></a>
+                    <a href="html/goods_list.html?type=type1"><span></span></a>
+                    <a href="html/goods_list.html?type=type1"><span></span></a>
+                    <a href="html/goods_list.html?type=type1"><span></span></a>
+                    <a href="html/goods_list.html?type=type1"><span></span></a>
+                </div>
+                <div class="rom_goods_sort">
+                    <div class="rgs_title">
+                        <h3>商品分类</h3>
+                    </div>
+                    <ul class="rgs_cont g_clear">
+                         <li>
+                            <h4><a href="html/goods_list.html?type=type1">运动休闲-鞋</a></h4>
+                            <img src="img/scnbtncat1.jpg"/>
+                            <ul>
+                                <li>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                    <a href="html/goods_list.html?type=type1">休鞋</a>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                </li>
+                                <li>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋574</a>
+                                    <a href="html/goods_list.html?type=type1">休闲ZX</a>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4><a href="html/goods_list.html?type=type1">运动休闲-鞋</a></h4>
+                            <img src="img/scnbtncat1.jpg"/>
+                            <ul>
+                                <li>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                    <a href="html/goods_list.html?type=type1">休鞋</a>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                </li>
+                                <li>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋574</a>
+                                    <a href="html/goods_list.html?type=type1">休闲ZX</a>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                </li>
+                            </ul>
+                        </li>
+                         <li>
+                            <h4><a href="html/goods_list.html?type=type1">运动休闲-鞋</a></h4>
+                            <img src="img/scnbtncat1.jpg"/>
+                            <ul>
+                                <li>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                    <a href="html/goods_list.html?type=type1">休鞋</a>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                </li>
+                                <li>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋574</a>
+                                    <a href="html/goods_list.html?type=type1">休闲ZX</a>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                </li>
+                            </ul>
+                        </li>
+                         <li>
+                            <h4><a href="html/goods_list.html?type=type1">运动休闲-鞋</a></h4>
+                            <img src="img/scnbtncat1.jpg"/>
+                            <ul>
+                                <li>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                    <a href="html/goods_list.html?type=type1">休鞋</a>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                </li>
+                                <li>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋574</a>
+                                    <a href="html/goods_list.html?type=type1">休闲ZX</a>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                </li>
+                            </ul>
+                        </li>
+                         <li>
+                            <h4><a href="html/goods_list.html?type=type1">运动休闲-鞋</a></h4>
+                            <img src="img/scnbtncat1.jpg"/>
+                            <ul>
+                                <li>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                    <a href="html/goods_list.html?type=type1">休鞋</a>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                </li>
+                                <li>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋574</a>
+                                    <a href="html/goods_list.html?type=type1">休闲ZX</a>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                </li>
+                            </ul>
+                        </li>
+                         <li>
+                            <h4><a href="html/goods_list.html?type=type1">运动休闲-鞋</a></h4>
+                            <img src="img/scnbtncat1.jpg"/>
+                            <ul>
+                                <li>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                    <a href="html/goods_list.html?type=type1">休鞋</a>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                </li>
+                                <li>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋574</a>
+                                    <a href="html/goods_list.html?type=type1">休闲ZX</a>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                </li>
+                            </ul>
+                        </li>
+                         <li>
+                            <h4><a href="html/goods_list.html?type=type1">运动休闲-鞋</a></h4>
+                            <img src="img/scnbtncat1.jpg"/>
+                            <ul>
+                                <li>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                    <a href="html/goods_list.html?type=type1">休鞋</a>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                </li>
+                                <li>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋574</a>
+                                    <a href="html/goods_list.html?type=type1">休闲ZX</a>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                </li>
+                            </ul>
+                        </li>
+                         <li>
+                            <h4><a href="html/goods_list.html?type=type1">运动休闲-鞋</a></h4>
+                            <img src="img/scnbtncat1.jpg"/>
+                            <ul>
+                                <li>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                    <a href="html/goods_list.html?type=type1">休鞋</a>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                </li>
+                                <li>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋574</a>
+                                    <a href="html/goods_list.html?type=type1">休闲ZX</a>
+                                    <a href="html/goods_list.html?type=type1">休闲鞋</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>   
+        </div>
+        <div id="footer">
+            <div class="footer_top">
+            <div class="w1000 g_clear">
+                <div class="ft_l g_fl"><img src="img/footer_tl.png" alt="" /></div>
+                <ul class="ft_r g_fl">
+                    <li>
+                        <a href="#"><img src="img/footer_tr1.png" alt="" /><span></span></a>
+                        <h4>支付方式</h4>
+                        <p>
+                            <a href="#">在线支付</a>
+                            <a href="#">货到付款</a>
+                            <a href="#">发票说明</a>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/footer_tr2.png" alt="" /><span></span></a>
+                        <h4>售后服务保障</h4>
+                        <p>
+                            <a href="#">退换货说明</a>
+                            <a href="#">服务承诺</a>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/footer_tr3.png" alt="" /><span></span></a>
+                        <h4>物流配送</h4>
+                        <p>
+                            <a href="#">合作快递</a>
+                            <a href="#">运费说明</a>
+                            <a href="#">配送时间</a>
+                        </p>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/footer_tr4.png" alt="" /><span></span></a>
+                        <h4>会员服务</h4>
+                        <p>
+                            <a href="#">级别和特权</a>
+                            <a href="#">积分政策</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>     
+            </div>
+            <div class="footer_mid"><div class="w1190">
+                <div class="f_links"><a href="#">关于名鞋库</a> | <a href="#">名鞋库资讯</a> | <a href="#">联系名鞋库</a> | <a href="#">人才招聘</a> | <a href="#">免责条款</a>  | <a href="#">法律声明</a> | <a href="#">意见反馈</a> | <a href="#">全部分类</a> | <a href="#">友情链接</a> | <a href="#">鞋码对照表</a> | <a href="#">问答咨询标签主题</a> | <a href="#">鞋子品牌大全</a> | <a href="#">商品大全</a> | <a href="#">扫黄打非</a></div>
+                <p>Copyright © 2008-2014 <strong>s.cn</strong> <a href="#">名鞋库</a> All Rights Reserved.    <a href="#">闽ICP备08106896号</a>    经营许可证闽B2-20110061    <img src="img/footer_m_icon.png" alt="" />闽公网安备 35020602000166号</p>
+                <div class="imgs">
+                    <a href="#"><img src="img/footer_m1.png" alt="" /></a>
+                    <a href="#"><img src="img/footer_m2.png" alt="" /></a>
+                    <a href="#"><img src="img/footer_m3.png" alt="" /></a>
+                    <a href="#"><img src="img/footer_m4.png" alt="" /></a>
+                    <a href="#"><img src="img/footer_m5.png" alt="" /></a>
+                </div>
+            </div></div>
+            <div class="footer_bot"><div class="w1190">
+                <div class="friend_links g_clear">
+                    <h5 class="g_fl">友情链接:</h5>
+                    <ul class="g_fl">
+                        <li><a href="#">服装</a><a href="#">宠物狗</a><a href="#">优惠券</a><a href="#">X团装修网</a><a href="#">商圈</a></li>
+                    </ul>
+                </div>
+            </div></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="lib/require.js" data-main="js/index.js"></script>
+</body>
+</html>

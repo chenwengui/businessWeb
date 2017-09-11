@@ -1,0 +1,56 @@
+/* 
+* @Author: 陈文贵
+* @Date:   2017-09-03 15:23:27
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-09-03 15:23:48
+*/
+/*头部*/
+.logo{margin-top: 25px;}
+.link_index{height: 40px;line-height: 40px;width: 780px;margin:0 auto;
+    a{float: right;font-size: 12px;color:#999999;
+        &:hover{color: #F00;text-decoration: underline;}
+    }
+}
+
+/*主要内容*/
+.content{width: 780px;margin:0 auto;overflow:hidden;border: 1px solid #efefef;border-radius: 2px;box-shadow: 0 0 8px #E5E5E5;
+    h3{font-size: 16px;font-family: microsoft yahei;color: #888;background: #f8f8f8;padding: 4px 10px;border-bottom: 1px solid #efefef;text-shadow: 1px 1px #fff;font-weight: 700;}
+    .reg_main{padding: 40px 0;}
+}
+.reg_main_l{width: 65%;border-right: 1px dashed #ccc;padding-left: 80px;box-sizing: border-box;
+    >div{margin-left: 75px;}
+    .mes_tip{padding: 3px 5px 3px 21px;display:inline;height: 25px;font-size: 12px;border: 1px solid #E6594E;white-space: nowrap;color: #E6594E;background: #FCEAE8 url('images/stop.gif') no-repeat 3px;}
+    .input_menu{font-size: 14px;;margin-top: 8px;
+        li{margin-bottom: 10px;
+            label{text-align: right;display:inline-block;color: #666;width: 75px;padding: 0;}
+            input{width: 220px;border: 1px solid rgb(204, 204, 204);height: 22px;line-height: 22px;padding: 3px 5px;color: rgb(0, 0, 0);
+                &#ver_code{width: 65px;}
+            }
+            .ver_code_value{margin: 0 2px;background-color: #EEEEEE;color:#000;letter-spacing: 4px;font-style: italic;display:inline-block;width: 54px;text-align:center;-webkit-user-select: none;user-select:none;}
+            .ver_code_btn{color:#666;font-size: 12px;
+                &:hover{text-decoration:underline;cursor:pointer;-webkit-user-select: none;user-select:none;}
+            }
+        }
+    }
+    .reg_agree{color:#666;font-size: 12px;margin-top: 25px;margin-bottom: 10px;
+        input{vertical-align: middle;}
+        span{margin:0 3px;}
+        a{color:#3366DD;text-decoration: underline;}
+    }
+    .reg_new{background: url('images/bg_color.png') no-repeat 0 -198px;width: 89px;height: 38px;text-align: center;line-height: 38px;color: #fff;font-size: 14px;font-weight: bold;cursor:pointer;-webkit-user-select:none;user-select:none;}
+}
+.reg_main_r{width: 34%;padding-top: 60px;
+    div{text-align: center;
+        &.btn{margin:10px 0 40px;}
+        strong{color:#333;font-size: 12px;}
+        a{display: inline-block;width: 91px;height: 32px;line-height: 30px;text-align: center;color: #c66;font-size: 14px;font-weight: 700;background: url('images/loginbg.png') no-repeat;
+            &:hover{color:#c00;}
+        }
+    }
+}
+
+
+/*底部*/
+.reg_foot{margin-top: 30px;
+    .w990{border-top: 2px solid #CE3C3B;padding: 20px 0;}
+}
